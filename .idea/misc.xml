@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="IdProvider" IDEtalkID="6FC7DBDE60CF1435354E879F21A38A26" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="modificationStamps">
+      <map>
+        <entry key="C:/Source/Server" value="1415085735703" />
+        <entry key="C:/Source/hello-play-java" value="1415205979393" />
+        <entry key="C:/Source/hello-scala" value="1415205198620" />
+      </map>
+    </option>
+  </component>
+</project>
+

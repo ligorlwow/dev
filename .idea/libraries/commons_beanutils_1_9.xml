@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="commons-beanutils-1.9">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/lib/commons-beanutils-1.9.2" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/lib/commons-beanutils-1.9.2/apidocs" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/lib/commons-beanutils-1.9.2" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/lib/commons-beanutils-1.9.2" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/lib/commons-beanutils-1.9.2" recursive="false" type="SOURCES" />
+  </library>
+</component>
