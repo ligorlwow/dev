@@ -5,4 +5,8 @@ import Entity.Migrator;
 public class MigratorService extends BaseDbService<Migrator> {
 
     public static final MigratorService Instance = new MigratorService();
+
+    private MigratorService() {
+        super();
+    }
 }

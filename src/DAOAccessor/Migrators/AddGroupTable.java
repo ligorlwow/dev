@@ -3,11 +3,7 @@ package DAOAccessor.Migrators;
 import DAOAccessor.DBConstants;
 import DAOAccessor.DBFactory;
 import DAOAccessor.DBUtils;
-import DAOAccessor.Services.MigratorService;
 
-/**
- * Created by Igor Sychev on 08.11.14.
- */
 public class AddGroupTable implements IRunMigrator {
 
     private static final String CREATE_GROUP_TABLE =

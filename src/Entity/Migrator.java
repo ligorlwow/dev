@@ -1,6 +1,7 @@
 package Entity;
 
 import DAOAccessor.DBConstants;
+import Framework.Anotations.IsSimpleType;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,9 +10,10 @@ import javax.persistence.Entity;
  * Мигратор базы данных.
  */
 @Entity
-public class Migrator extends BaseEntity {
+public class Migrator extends BaseTable {
 
     @Column(name = "number")
+    @IsSimpleType
     private int number;
 
     public Migrator() {

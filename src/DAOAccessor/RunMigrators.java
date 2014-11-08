@@ -1,6 +1,7 @@
 package DAOAccessor;
 
 import DAOAccessor.Migrators.AddGroupTable;
+import DAOAccessor.Migrators.AddStudentTable;
 import DAOAccessor.Migrators.CreateMigrator;
 import DAOAccessor.Migrators.IRunMigrator;
 import DAOAccessor.Services.MigratorService;
@@ -42,6 +43,7 @@ public class RunMigrators {
 
         result.add(new CreateMigrator());
         result.add(new AddGroupTable());
+        result.add(new AddStudentTable());
 
         result.sort(new Comparator<IRunMigrator>() {
             @Override

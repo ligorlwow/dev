@@ -1,9 +1,9 @@
 package Entity;
 
-/**
- * Created by Igor Sychev on 08.11.14.
- */
-public abstract class BaseEntity {
+public class BaseEntity extends BaseTable {
 
-    public abstract String getTableName();
+    @Override
+    public String getTableName() {
+        throw new RuntimeException("BaseEntity is not entity :)");
+    }
 }

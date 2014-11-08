@@ -1,6 +1,8 @@
 package Entity;
 
 import DAOAccessor.DBConstants;
+import Framework.Anotations.IsAutoIncrement;
+import Framework.Anotations.IsSimpleType;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -11,18 +13,31 @@ import javax.persistence.Entity;
 @Entity
 public class Group extends BaseEntity {
 
+    @Column(name = "id")
+    @IsSimpleType
+    @IsAutoIncrement
+    private int id;
+
     @Column(name = "name")
     private String name;
 
     @Column(name = "isDeleted")
+    @IsSimpleType
     private boolean isDeleted;
 
     public Group() {
     }
 
-    public Group(String name, boolean isDeleted) {
+    public Group(String name) {
         this.name = name;
-        this.isDeleted = isDeleted;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -33,7 +48,7 @@ public class Group extends BaseEntity {
         this.name = name;
     }
 
-    public boolean isDeleted() {
+    public boolean getIsDeleted() {
         return isDeleted;
     }
 

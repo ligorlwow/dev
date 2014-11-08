@@ -3,61 +3,72 @@ package DAOAccessor.Services;
 import DAOAccessor.DBConstants;
 import DAOAccessor.DBFactory;
 import DAOAccessor.ResultSetMapper;
-import Entity.BaseEntity;
+import Entity.BaseTable;
+import Entity.Group;
 import Framework.GenericExtensions;
+import Framework.RowMapByObject;
 
 import java.lang.reflect.Type;
 import java.sql.ResultSet;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-public abstract class BaseDbService<T extends BaseEntity> {
+public abstract class BaseDbService<T extends BaseTable> {
     private static final String GET_ALL = "SELECT * FROM %s.%s";
+    private static final String GET_BY_ID = "SELECT * FROM %s.%s WHERE id = %s";
     private static final String ADD_NEW_ROW = "INSERT INTO `%s`.`%s` (%s) VALUES (%s)";
 
     protected final ResultSetMapper<T> mapper = new ResultSetMapper<>();
-    private final Class<?> CurrentSubclass;
-    private final String TableName;
+    private final Class<?> subclass;
+    private final String tableName;
 
     public BaseDbService() {
 
         try {
             Type subclassType = GenericExtensions.getGenericClass(getClass());
             T entity = (T) GenericExtensions.getInstance(subclassType);
-            CurrentSubclass = entity.getClass();
-            TableName = entity.getTableName();
+            subclass = entity.getClass();
+            tableName = entity.getTableName();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
     }
 
     public List<T> getAll() {
-        ResultSet set = DBFactory.executeQuery(String.format(GET_ALL, DBConstants.DB_NAME, TableName));
-        return mapper.mapRersultSetToObject(set, CurrentSubclass);
+        ResultSet set = DBFactory.executeQuery(String.format(GET_ALL, DBConstants.DB_NAME, tableName));
+        return mapper.mapRersultSetToObject(set, subclass);
+    }
+
+    public T getById(int id) {
+        ResultSet set = DBFactory.executeQuery(String.format(GET_BY_ID, DBConstants.DB_NAME, tableName, id));
+        return mapper.mapRersultSetToObject(set, subclass).get(0);
+    }
+
+    //TODO Написать логику по получение зависимых сущностей.
+    public void setDependedObjects(T object){
+        throw new RuntimeException("Set depended objects not supported.");
     }
 
     public void add(T object) {
-        HashMap<String, String> columnsWithValues = mapper.getRowMapByObject(object, CurrentSubclass);
+        List<RowMapByObject> rowMap = mapper.getRowMapByObject(object, subclass);
 
         String columns = "";
         String values = "";
         int iterator = 0;
-        for (Map.Entry<String, String> map : columnsWithValues.entrySet()) {
-            // Предпологаем, что для всех таблиц стоит автогенирация id.
-            if (map.getKey() == "id")
-                continue;
+        for (RowMapByObject map : rowMap) {
+            if (!map.isSimple()) {
+                values += "\"" + map.getValue() + "\"";
+            } else {
+                values += map.getValue();
+            }
+            columns += map.getColumnName();
 
-            columns += "" + map.getKey() + "";
-            values += "" + map.getValue() + "";
-
-            if (columnsWithValues.size() - 1 != iterator) {
+            if (rowMap.size() - 1 != iterator) {
                 columns += ", ";
                 values += ", ";
             }
-
+            iterator++;
         }
-        String addQuery = String.format(ADD_NEW_ROW, DBConstants.DB_NAME, TableName, columns, values);
+        String addQuery = String.format(ADD_NEW_ROW, DBConstants.DB_NAME, tableName, columns, values);
         DBFactory.executeUpdate(addQuery);
     }
 }
