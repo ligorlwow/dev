@@ -9,4 +9,9 @@ public class MigratorService extends BaseDbService<Migrator> {
     private MigratorService() {
         super();
     }
+
+    @Override
+    public void setDependedObjects(Migrator object) {
+
+    }
 }

@@ -10,4 +10,9 @@ public class GroupService extends BaseDbService<Group> {
 
     private GroupService() {
     }
+
+    @Override
+    public void setDependedObjects(Group object) {
+
+    }
 }

@@ -1,9 +1,6 @@
 package DAOAccessor;
 
-import DAOAccessor.Migrators.AddGroupTable;
-import DAOAccessor.Migrators.AddStudentTable;
-import DAOAccessor.Migrators.CreateMigrator;
-import DAOAccessor.Migrators.IRunMigrator;
+import DAOAccessor.Migrators.*;
 import DAOAccessor.Services.MigratorService;
 import Entity.Migrator;
 import Framework.LambdaExtensions;
@@ -23,7 +20,7 @@ public class RunMigrators {
 
         // Мигратор старта, его запускаем вручную
         // т.к. он нужен для старта остальных миграторов.
-        IRunMigrator createMigrator = new CreateMigrator();
+        IRunMigrator createMigrator = new U01CreateMigrator();
         createMigrator.migrate();
         OptionalInt nullAbleMaxNumber = MigratorService.Instance.getAll()
                 .stream()
@@ -41,9 +38,12 @@ public class RunMigrators {
     private static List<IRunMigrator> getAllSortedRegisteredMigrators() {
         List<IRunMigrator> result = new ArrayList<>();
 
-        result.add(new CreateMigrator());
-        result.add(new AddGroupTable());
-        result.add(new AddStudentTable());
+        result.add(new U01CreateMigrator());
+        result.add(new U02AddGroupTable());
+        result.add(new U03AddStudentTable());
+        result.add(new U04AddStudySubjectTable());
+        result.add(new U05AddTeacherTable());
+        result.add(new U06AddStudySubjectMapping());
 
         result.sort(new Comparator<IRunMigrator>() {
             @Override

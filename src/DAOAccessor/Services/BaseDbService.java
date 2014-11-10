@@ -35,18 +35,20 @@ public abstract class BaseDbService<T extends BaseTable> {
 
     public List<T> getAll() {
         ResultSet set = DBFactory.executeQuery(String.format(GET_ALL, DBConstants.DB_NAME, tableName));
-        return mapper.mapRersultSetToObject(set, subclass);
+        List<T> allEntitiesWithoutDependedObjects = mapper.mapRersultSetToObject(set, subclass);
+        allEntitiesWithoutDependedObjects.forEach(e -> setDependedObjects(e));
+        return allEntitiesWithoutDependedObjects;
     }
 
     public T getById(int id) {
         ResultSet set = DBFactory.executeQuery(String.format(GET_BY_ID, DBConstants.DB_NAME, tableName, id));
-        return mapper.mapRersultSetToObject(set, subclass).get(0);
+        T entityWithoutDependedObjects = mapper.mapRersultSetToObject(set, subclass).get(0);
+        setDependedObjects(entityWithoutDependedObjects);
+        return entityWithoutDependedObjects;
     }
 
     //TODO Написать логику по получение зависимых сущностей.
-    public void setDependedObjects(T object){
-        throw new RuntimeException("Set depended objects not supported.");
-    }
+    public abstract void setDependedObjects(T object);
 
     public void add(T object) {
         List<RowMapByObject> rowMap = mapper.getRowMapByObject(object, subclass);

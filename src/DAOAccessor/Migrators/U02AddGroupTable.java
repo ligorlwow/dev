@@ -4,19 +4,20 @@ import DAOAccessor.DBConstants;
 import DAOAccessor.DBFactory;
 import DAOAccessor.DBUtils;
 
-public class AddGroupTable implements IRunMigrator {
+public class U02AddGroupTable implements IRunMigrator {
 
     private static final String CREATE_GROUP_TABLE =
             "CREATE  TABLE IF NOT EXISTS `%s`.`%s` (" +
                     "`id` INT(5) NOT NULL AUTO_INCREMENT," +
                     "`name` VARCHAR(45) NOT NULL," +
+                    "`course` int(5) NOT NULL DEFAULT 1," +
                     "`isDeleted` BOOLEAN NOT NULL DEFAULT 0," +
                     " PRIMARY KEY (`id`) )";
     ;
 
     @Override
     public int getNumber() {
-        return 1;
+        return 2;
     }
 
     @Override

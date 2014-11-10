@@ -24,7 +24,7 @@ public class StartupController extends HttpServlet {
     @Override
     public void init() throws ServletException {
         RunMigrators.tryMigrateIfNeeded();
-        Group group = new Group("91-112");
+        Group group = new Group("91-112", 1);
         GroupService.Instance.add(group);
         Group newGroup = GroupService.Instance.getAll().get(0);
         Student student1 = new Student("Булат", "Насрулин", newGroup, false);

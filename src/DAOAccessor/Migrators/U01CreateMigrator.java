@@ -6,13 +6,13 @@ import DAOAccessor.DBUtils;
 import DAOAccessor.Services.MigratorService;
 import Entity.Migrator;
 
-public class CreateMigrator implements IRunMigrator {
+public class U01CreateMigrator implements IRunMigrator {
 
     private static final String ADD_MIGRATOR_TABLE = "CREATE  TABLE IF NOT EXISTS `%s`.`%s` (`number` INT(5) NOT NULL, PRIMARY KEY (`number`) )";
 
     @Override
     public int getNumber() {
-        return 0;
+        return 1;
     }
 
     @Override

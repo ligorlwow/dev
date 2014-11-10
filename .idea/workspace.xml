@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/DAOAccessor/Services/BaseDbService.java" line="73" />
+    <bookmark url="file://$PROJECT_DIR$/src/DAOAccessor/Services/BaseDbService.java" line="75" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11d8e902-f444-45e2-a05f-d0bdbe554fd0" name="Default" comment="" />
@@ -58,7 +58,23 @@
       </breakpoint>
     </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/Controllers/StartupController.java" line="25" class="Controllers.StartupController" package="Controllers">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -68,61 +84,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ResultSetMapper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DAOAccessor/ResultSetMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="1422" selection-end="1422" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1836">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Group.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Group.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="0" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="986">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#666#667#0" expanded="true" />
-                <element signature="e#694#695#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StartupController.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="StartupController.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controllers/StartupController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="711" selection-end="1403" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="680">
+            <state line="21" column="52" selection-start="646" selection-end="646" vertical-scroll-proportion="0.2994129" vertical-offset="0" max-vertical-offset="680">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IsSimpleType.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Framework/Anotations/IsSimpleType.java">
+      <file leaf-file-name="StudySubjectMappingService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/StudySubjectMappingService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="30" selection-start="223" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+            <state line="3" column="0" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="408">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IsAutoIncrement.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Framework/Anotations/IsAutoIncrement.java">
+      <file leaf-file-name="BaseDbService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/BaseDbService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="33" selection-start="127" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DependedField.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Framework/Anotations/DependedField.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="31" selection-start="127" selection-end="140" vertical-scroll-proportion="0.099804305" vertical-offset="0" max-vertical-offset="511">
+            <state line="73" column="28" selection-start="2720" selection-end="2720" vertical-scroll-proportion="0.0" vertical-offset="1241" max-vertical-offset="1377">
               <folding />
             </state>
           </provider>
@@ -131,40 +114,53 @@
       <file leaf-file-name="DBFactory.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DAOAccessor/DBFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="901">
+            <state line="40" column="22" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="952">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Student.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Student.java">
+      <file leaf-file-name="U06AddStudySubjectMapping.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Migrators/U06AddStudySubjectMapping.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="31" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1479">
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1126#1127#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseDbService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/BaseDbService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="0" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1173">
+            <state line="19" column="49" selection-start="860" selection-end="874" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="833">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="StudentsService.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/StudentsService.java">
+      <file leaf-file-name="U05AddTeacherTable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Migrators/U05AddTeacherTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="16" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0" vertical-offset="67" max-vertical-offset="629">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="29" column="25" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="663">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="U04AddStudySubjectTable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Migrators/U04AddStudySubjectTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="0" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="629">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudySubjectService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/StudySubjectService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="357">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TeacherService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/TeacherService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="374">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -179,20 +175,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web/css/style.css" />
-        <option value="$PROJECT_DIR$/web/group.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/group.jsp" />
-        <option value="$PROJECT_DIR$/src/mainController.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/head.jsp" />
-        <option value="$PROJECT_DIR$/src/MainController.java" />
-        <option value="db-console:/75b15b10/05e49d5a-2012-4a2e-9054-74d781c0cc08/" />
-        <option value="$PROJECT_DIR$/glassfish4/glassfish/domains/domain1/generated/policy/Server_war_exploded/Server_war_exploded/granted.policy" />
-        <option value="$PROJECT_DIR$/src/Entity/DBFactory.java" />
-        <option value="$PROJECT_DIR$/src/Controllers/MainController.java" />
-        <option value="$PROJECT_DIR$/src/Controllers/StratupController.java" />
-        <option value="$PROJECT_DIR$/src/Services/DBFactory.java" />
-        <option value="$PROJECT_DIR$/src/Services/ResultSetMapper.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/Services/DbManager/DBFactory.java" />
         <option value="$PROJECT_DIR$/src/Entity/ResultSetMapper.java" />
         <option value="$PROJECT_DIR$/src/DAOAccessor/ResultSetExtensions.java" />
@@ -209,25 +191,40 @@
         <option value="$PROJECT_DIR$/src/DAOAccessor/DBUtils.java" />
         <option value="$PROJECT_DIR$/src/Framework/GenericExtensions.java" />
         <option value="$PROJECT_DIR$/src/Framework/LambdaExtensions.java" />
-        <option value="$PROJECT_DIR$/src/DAOAccessor/Migrators/CreateMigrator.java" />
         <option value="$PROJECT_DIR$/src/Entity/BaseTable.java" />
-        <option value="$PROJECT_DIR$/src/DAOAccessor/Services/MigratorService.java" />
         <option value="$PROJECT_DIR$/src/Entity/Migrator.java" />
         <option value="$PROJECT_DIR$/src/Framework/RowMapByObject.java" />
         <option value="$PROJECT_DIR$/src/Framework/Anotations/IsSimpleType.java" />
         <option value="$PROJECT_DIR$/src/Entity/BaseEntity.java" />
         <option value="$PROJECT_DIR$/src/Framework/Anotations/IsAutoIncrement.java" />
         <option value="$PROJECT_DIR$/src/Framework/Anotations/DependedField.java" />
-        <option value="$PROJECT_DIR$/src/DAOAccessor/Services/GroupService.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Migrators/AddStudentTable.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/ResultSetMapper.java" />
+        <option value="$PROJECT_DIR$/src/Entity/Group.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Migrators/AddGroupTable.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Migrators/AddStudySubjectTable.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Migrators/CreateMigrator.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Migrators/U02AddGroupTable.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Migrators/U01CreateMigrator.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Migrators/U03AddStudentTable.java" />
+        <option value="$PROJECT_DIR$/src/Entity/StudySubject.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Migrators/AddTeacherTable.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Migrators/U04AddStudySubjectTable.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Migrators/U06AddStudySubjectMaping.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Migrators/U05AddTeacherTable.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/DBConstants.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Migrators/U06AddStudySubjectMapping.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/RunMigrators.java" />
+        <option value="$PROJECT_DIR$/src/Entity/Teacher.java" />
+        <option value="$PROJECT_DIR$/src/Entity/Student.java" />
+        <option value="$PROJECT_DIR$/src/Entity/StudySubjectMapping.java" />
         <option value="$PROJECT_DIR$/src/DAOAccessor/Services/BaseDbService.java" />
         <option value="$PROJECT_DIR$/src/DAOAccessor/Services/StudentsService.java" />
-        <option value="$PROJECT_DIR$/src/DAOAccessor/Migrators/AddGroupTable.java" />
-        <option value="$PROJECT_DIR$/src/DAOAccessor/DBConstants.java" />
-        <option value="$PROJECT_DIR$/src/DAOAccessor/Migrators/AddStudentTable.java" />
-        <option value="$PROJECT_DIR$/src/DAOAccessor/RunMigrators.java" />
-        <option value="$PROJECT_DIR$/src/DAOAccessor/ResultSetMapper.java" />
-        <option value="$PROJECT_DIR$/src/Entity/Student.java" />
-        <option value="$PROJECT_DIR$/src/Entity/Group.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Services/GroupService.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Services/MigratorService.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Services/StudySubjectService.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Services/TeacherService.java" />
+        <option value="$PROJECT_DIR$/src/DAOAccessor/Services/StudySubjectMappingService.java" />
         <option value="$PROJECT_DIR$/src/Controllers/StartupController.java" />
       </list>
     </option>
@@ -273,7 +270,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -325,28 +321,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dev" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Anotations" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -448,8 +422,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="glassfish4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="glassfish4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="glassfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="glassfish4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="glassfish" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domain1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -478,6 +507,7 @@
     <property name="LayoutCode.rearrangeEntriesJava" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/commons-collections-3.2.1" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src" />
+    <property name="SearchEverywhereHistory" value="" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -862,12 +892,14 @@
       <workItem from="1415466610343" duration="850000" />
       <workItem from="1415467486063" duration="75000" />
       <workItem from="1415468479619" duration="908000" />
-      <workItem from="1415469484785" duration="12213000" />
+      <workItem from="1415469484785" duration="12970000" />
+      <workItem from="1415638288218" duration="5726000" />
+      <workItem from="1415644965062" duration="334000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73473000" />
+    <option name="totallyTimeSpent" value="80290000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -891,38 +923,38 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12673056" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39675677" sideWeight="0.39084134" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39675677" sideWeight="0.6091587" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39675677" sideWeight="0.39084134" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25079873" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.56972975" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3372973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39675677" sideWeight="0.6091587" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24973376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32172996" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3372973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -980,52 +1012,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/head.jsp">
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/TeacherService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="7" selection-start="419" selection-end="419" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="340" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/sql/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="8" selection-start="3955" selection-end="3955" vertical-scroll-proportion="0.0" vertical-offset="1178" max-vertical-offset="24956" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/sql/Statement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="875" column="12" selection-start="40967" selection-end="40967" vertical-scroll-proportion="0.0" vertical-offset="14315" max-vertical-offset="23001" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/META-INF/application.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="2" selection-start="310" selection-end="310" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="652" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-31.428802" vertical-offset="19423" max-vertical-offset="20145" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/glassfish4/glassfish/config/glassfish.container">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="24" selection-start="2040" selection-end="2040" vertical-scroll-proportion="-16.2" vertical-offset="292" max-vertical-offset="833" />
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/dataSources.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="19" selection-start="705" selection-end="725" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425" />
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/sql/ResultSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="175" column="12" selection-start="7406" selection-end="7406" vertical-scroll-proportion="0.0" vertical-offset="2327" max-vertical-offset="72607" />
+        <state line="13" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="374">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/75b15b10/05e49d5a-2012-4a2e-9054-74d781c0cc08/checkin..migrator">
@@ -1075,58 +1066,32 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/commons-beanutils-1.9.2/commons-beanutils-1.9.2-sources.jar!/org/apache/commons/beanutils/ConvertUtilsBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="464" column="5" selection-start="16828" selection-end="16828" vertical-scroll-proportion="0.0" vertical-offset="6697" max-vertical-offset="14586">
-          <folding />
-        </state>
+        <state line="464" column="5" selection-start="16828" selection-end="16828" vertical-scroll-proportion="0.0" vertical-offset="6697" max-vertical-offset="14586" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/lang/reflect/Field.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="18" selection-start="5192" selection-end="5192" vertical-scroll-proportion="0.0" vertical-offset="1833" max-vertical-offset="19193">
-          <folding />
-        </state>
+        <state line="163" column="18" selection-start="5192" selection-end="5192" vertical-scroll-proportion="0.0" vertical-offset="1833" max-vertical-offset="19193" />
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_20/src.zip!/java/lang/Boolean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="19" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0" vertical-offset="4284" max-vertical-offset="5406">
-          <folding />
-        </state>
+        <state line="42" column="19" selection-start="746" selection-end="746" vertical-scroll-proportion="0.0" vertical-offset="4284" max-vertical-offset="5406" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/commons-beanutils-1.9.2/commons-beanutils-1.9.2-sources.jar!/org/apache/commons/beanutils/PropertyUtilsBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="914" column="30" selection-start="37504" selection-end="37504" vertical-scroll-proportion="0.0" vertical-offset="15079" max-vertical-offset="38437">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="914" column="30" selection-start="37504" selection-end="37504" vertical-scroll-proportion="0.0" vertical-offset="15079" max-vertical-offset="38437" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/commons-beanutils-1.9.2/commons-beanutils-1.9.2-sources.jar!/org/apache/commons/beanutils/BeanUtilsBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="708" column="52" selection-start="29262" selection-end="29262" vertical-scroll-proportion="0.0" vertical-offset="11237" max-vertical-offset="18751">
-          <folding>
-            <element signature="e#0#46724#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-            <element signature="e#1999#2353#0" expanded="false" />
-            <element signature="e#2330#2331#0" expanded="false" />
-            <element signature="e#10503#10533#1" expanded="false" />
-            <element signature="e#20543#20559#0" expanded="false" />
-            <element signature="e#22441#22449#0" expanded="false" />
-            <element signature="e#42852#42853#0" expanded="false" />
-            <element signature="e#42891#42892#0" expanded="false" />
-            <element signature="e#43094#43095#0" expanded="false" />
-            <element signature="e#43134#43135#0" expanded="false" />
-          </folding>
-        </state>
+        <state line="708" column="52" selection-start="29262" selection-end="29262" vertical-scroll-proportion="0.0" vertical-offset="11237" max-vertical-offset="18751" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/commons-beanutils-1.9.2/commons-beanutils-1.9.2-sources.jar!/org/apache/commons/beanutils/BeanUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="379" column="47" selection-start="14626" selection-end="14626" vertical-scroll-proportion="0.0" vertical-offset="5899" max-vertical-offset="8381">
-          <folding />
-        </state>
+        <state line="379" column="47" selection-start="14626" selection-end="14626" vertical-scroll-proportion="0.0" vertical-offset="5899" max-vertical-offset="8381" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Framework/ResultSetExtensions.java">
@@ -1140,21 +1105,19 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="11" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
           <folding>
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#452#453#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#516#517#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="false" />
+            <element signature="e#392#393#0" expanded="false" />
+            <element signature="e#424#425#0" expanded="false" />
+            <element signature="e#452#453#0" expanded="false" />
+            <element signature="e#485#486#0" expanded="false" />
+            <element signature="e#516#517#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/javax.persistence.jar!/javax/persistence/Column.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="259" selection-end="336" vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="561">
-          <folding />
-        </state>
+        <state line="7" column="0" selection-start="259" selection-end="336" vertical-scroll-proportion="-4.08" vertical-offset="0" max-vertical-offset="561" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Framework/LambdaExtensions.java">
@@ -1164,37 +1127,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/DBUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="35" selection-start="666" selection-end="666" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Framework/GenericExtensions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="25" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/MigratorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/RunMigrators.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="73" selection-start="1372" selection-end="1372" vertical-scroll-proportion="0.0" vertical-offset="250" max-vertical-offset="867">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/DBConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="49" selection-start="91" selection-end="98" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
           <folding />
         </state>
       </provider>
@@ -1220,120 +1155,219 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Migrators/CreateMigrator.java">
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/ResultSetMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="4" selection-start="251" selection-end="392" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
-          <folding />
+        <state line="36" column="0" selection-start="1422" selection-end="1422" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1836">
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Anotations/IsSimpleType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="30" selection-start="223" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Anotations/IsAutoIncrement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="33" selection-start="127" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Framework/Anotations/DependedField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Migrators/IRunMigrator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="9" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+        <state line="3" column="17" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Migrators/AddGroupTable.java">
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Migrators/U01CreateMigrator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="626" selection-end="835" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+        <state line="19" column="16" selection-start="523" selection-end="523" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="459">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Migrators/AddStudentTable.java">
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Migrators/U02AddGroupTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="20" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="731">
+        <state line="8" column="0" selection-start="180" selection-end="577" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/DBUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="30" selection-start="858" selection-end="858" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Group.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="0" selection-start="276" selection-end="1218" vertical-scroll-proportion="0.0" vertical-offset="193" max-vertical-offset="1071">
+          <folding>
+            <element signature="e#950#951#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1056#1057#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/StudySubject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="193" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/GroupService.java">
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Migrators/U03AddStudentTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="41" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+        <state line="28" column="0" selection-start="944" selection-end="1285" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="697">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/StudentsService.java">
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/DBConstants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="16" selection-start="561" selection-end="561" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/DBFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1612" selection-end="1612" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="901">
+        <state line="9" column="87" selection-start="468" selection-end="487" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Student.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="31" selection-start="1099" selection-end="1099" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1479">
+        <state line="96" column="5" selection-start="318" selection-end="1876" vertical-scroll-proportion="0.0" vertical-offset="397" max-vertical-offset="1343">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Teacher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="68" selection-start="665" selection-end="665" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="1054">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1126#1127#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/RunMigrators.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="0" selection-start="886" selection-end="886" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/StudySubjectMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="117" column="0" selection-start="2409" selection-end="2409" vertical-scroll-proportion="0.0" vertical-offset="1026" max-vertical-offset="1904">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1106#1107#0" expanded="true" />
+            <element signature="e#1134#1135#0" expanded="true" />
+            <element signature="e#1421#1422#0" expanded="true" />
+            <element signature="e#1451#1452#0" expanded="true" />
+            <element signature="e#1608#1609#0" expanded="true" />
+            <element signature="e#1640#1641#0" expanded="true" />
+            <element signature="e#1687#1688#0" expanded="true" />
+            <element signature="e#1729#1730#0" expanded="true" />
+            <element signature="e#1774#1775#0" expanded="true" />
+            <element signature="e#1809#1810#0" expanded="true" />
+            <element signature="e#2006#2007#0" expanded="true" />
+            <element signature="e#2043#2044#0" expanded="true" />
+            <element signature="e#2100#2101#0" expanded="true" />
+            <element signature="e#2152#2153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/GroupService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="0" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/MigratorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/StudentsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="50" selection-start="191" selection-end="191" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/StudySubjectService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="329" selection-end="329" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/TeacherService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/BaseDbService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1486" selection-end="1486" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1173">
+        <state line="73" column="28" selection-start="2720" selection-end="2720" vertical-scroll-proportion="0.0" vertical-offset="696" max-vertical-offset="1207">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/ResultSetMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/DBFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1422" selection-end="1422" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1836">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="40" column="22" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.0" vertical-offset="339" max-vertical-offset="901">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Group.java">
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Migrators/U06AddStudySubjectMapping.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="578" selection-end="578" vertical-scroll-proportion="0.0" vertical-offset="322" max-vertical-offset="986">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#694#695#0" expanded="true" />
-          </folding>
+        <state line="19" column="49" selection-start="860" selection-end="874" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Migrators/U05AddTeacherTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="25" selection-start="904" selection-end="904" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="663">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Migrators/U04AddStudySubjectTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DAOAccessor/Services/StudySubjectMappingService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="66" selection-end="66" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controllers/StartupController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="711" selection-end="1403" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="680">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Framework/Anotations/IsSimpleType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="30" selection-start="223" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Framework/Anotations/IsAutoIncrement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="33" selection-start="127" selection-end="142" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Framework/Anotations/DependedField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="31" selection-start="127" selection-end="140" vertical-scroll-proportion="0.099804305" vertical-offset="0" max-vertical-offset="511">
+        <state line="21" column="52" selection-start="646" selection-end="646" vertical-scroll-proportion="0.2994129" vertical-offset="0" max-vertical-offset="680">
           <folding />
         </state>
       </provider>

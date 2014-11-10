@@ -4,7 +4,7 @@ import DAOAccessor.DBConstants;
 import DAOAccessor.DBFactory;
 import DAOAccessor.DBUtils;
 
-public class AddStudentTable implements IRunMigrator {
+public class U03AddStudentTable implements IRunMigrator {
 
     private static final String CREATE_STUDENT_TABLE =
             "CREATE  TABLE IF NOT EXISTS `%s`.`%s` (\n" +
@@ -21,7 +21,7 @@ public class AddStudentTable implements IRunMigrator {
 
     @Override
     public int getNumber() {
-        return 2;
+        return 3;
     }
 
     @Override
