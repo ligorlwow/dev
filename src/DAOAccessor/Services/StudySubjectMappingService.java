@@ -4,7 +4,7 @@ import Entity.StudySubjectMapping;
 
 public class StudySubjectMappingService extends BaseDbService<StudySubjectMapping> {
 
-    public static final StudySubjectMapping Instance = new StudySubjectMapping();
+    public static final StudySubjectMappingService Instance = new StudySubjectMappingService();
 
     private StudySubjectMappingService() {
     }

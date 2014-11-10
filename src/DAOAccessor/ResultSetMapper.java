@@ -95,7 +95,7 @@ public class ResultSetMapper<T> {
                 }
             }
         } catch (Exception e) {
-            throw new RuntimeException("Cannot serialize object.");
+            throw new RuntimeException("Cannot serialize object.", e);
         }
         return outputMap;
     }

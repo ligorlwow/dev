@@ -6,8 +6,11 @@ import Framework.Anotations.IsSimpleType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 
+/**
+ * Аудтитория.
+ */
 @Entity
-public class Teacher extends BaseEntity {
+public class ClassRoom extends BaseEntity {
 
     @Column(name = "id")
     @IsSimpleType
@@ -17,23 +20,31 @@ public class Teacher extends BaseEntity {
     @Column(name = "name")
     private String name;
 
-    @Column(name = "surname")
-    private String surname;
+    /**
+     * Долгота.
+     */
+    @Column(name = "longitude")
+    @IsSimpleType
+    private double longitude;
 
-    @Column(name = "patronymic")
-    private String patronymic;
+    /**
+     * Широта.
+     */
+    @Column(name = "latitude")
+    @IsSimpleType
+    private double latitude;
 
     @Column(name = "isDeleted")
     @IsSimpleType
     private boolean isDeleted;
 
-    public Teacher() {
+    public ClassRoom() {
     }
 
-    public Teacher(String name, String surname, String patronymic) {
+    public ClassRoom(String name, double longitude, double latitude) {
         this.name = name;
-        this.surname = surname;
-        this.patronymic = patronymic;
+        this.longitude = longitude;
+        this.latitude = latitude;
     }
 
     public int getId() {
@@ -52,20 +63,20 @@ public class Teacher extends BaseEntity {
         this.name = name;
     }
 
-    public String getPatronymic() {
-        return patronymic;
+    public double getLongitude() {
+        return longitude;
     }
 
-    public void setPatronymic(String patronymic) {
-        this.patronymic = patronymic;
+    public void setLongitude(double longitude) {
+        this.longitude = longitude;
     }
 
-    public String getSurname() {
-        return surname;
+    public double getLatitude() {
+        return latitude;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setLatitude(double latitude) {
+        this.latitude = latitude;
     }
 
     public boolean getIsDeleted() {
@@ -76,9 +87,8 @@ public class Teacher extends BaseEntity {
         this.isDeleted = isDeleted;
     }
 
-
     @Override
     public String getTableName() {
-        return "Teacher";
+        return "ClassRoom";
     }
 }

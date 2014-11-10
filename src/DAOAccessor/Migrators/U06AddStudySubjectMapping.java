@@ -31,7 +31,7 @@ public class U06AddStudySubjectMapping implements IRunMigrator {
         if (!DBUtils.tableExists(DBConstants.DB_NAME, DBConstants.TABLE_STUDY_SUBJECT_MAPPING_TABLE)) {
             DBFactory.executeUpdate(String.format(CREATE_STUDY_SUBJECT_MAPPING_TABLE,
                     DBConstants.DB_NAME,
-                    DBConstants.TABLE_STUDENT,
+                    DBConstants.TABLE_STUDY_SUBJECT_MAPPING_TABLE,
                     DBConstants.DB_NAME,
                     DBConstants.TABLE_GROUP,
                     DBConstants.DB_NAME,

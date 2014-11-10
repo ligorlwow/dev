@@ -43,6 +43,18 @@ public class StudySubjectMapping extends BaseEntity {
     @IsSimpleType
     private boolean isDeleted;
 
+    public StudySubjectMapping() {
+    }
+
+    public StudySubjectMapping(Group group, Teacher teacher, StudySubject studySubject) {
+        this.group = group;
+        this.teacher = teacher;
+        this.studySubject = studySubject;
+        this.groupId = group.getId();
+        this.teacherId = teacher.getId();
+        this.studySubjectId = studySubject.getId();
+    }
+
     public int getId() {
         return id;
     }

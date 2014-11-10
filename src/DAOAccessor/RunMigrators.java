@@ -44,6 +44,9 @@ public class RunMigrators {
         result.add(new U04AddStudySubjectTable());
         result.add(new U05AddTeacherTable());
         result.add(new U06AddStudySubjectMapping());
+        result.add(new U07AddClassRoomTable());
+        result.add(new U08AddAuthorizationEventTable());
+        result.add(new U09AddEventTable());
 
         result.sort(new Comparator<IRunMigrator>() {
             @Override
