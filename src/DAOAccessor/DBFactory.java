@@ -1,9 +1,12 @@
 package DAOAccessor;
 
+import Framework.LogFactory;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.Statement;
+import java.util.logging.Logger;
 
 public class DBFactory {
 
@@ -30,6 +33,7 @@ public class DBFactory {
 
     public static ResultSet executeQuery(String query) {
         try {
+            LogFactory.getLogger().info(String.format("Execute query : %s", query));
             Connection currentConnection = getConnection();
             Statement statement = currentConnection.createStatement();
             return statement.executeQuery(query);
@@ -40,6 +44,7 @@ public class DBFactory {
 
     public static int executeUpdate(String query) {
         try {
+            LogFactory.getLogger().info(String.format("Execute query : %s", query));
             Connection currentConnection = getConnection();
             Statement statement = currentConnection.createStatement();
             return statement.executeUpdate(query);
