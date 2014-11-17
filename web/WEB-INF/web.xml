@@ -10,4 +10,14 @@
         <servlet-class>Controllers.StartupController</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
+
+    <servlet>
+        <servlet-name>GroupListController</servlet-name>
+        <servlet-class>Controllers.GroupListController</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>GroupListController</servlet-name>
+        <url-pattern>/group/*</url-pattern>
+    </servlet-mapping>
 </web-app>

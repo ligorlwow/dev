@@ -7,21 +7,84 @@
     </database-info>
     <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
     <schema name="" catalog="checkin"/>
-    <schema name="" catalog="checkinj"/>
     <schema name="" catalog="information_schema"/>
     <schema name="" catalog="mysql"/>
     <schema name="" catalog="performance_schema"/>
     <schema name="" catalog="sakila"/>
     <schema name="" catalog="test"/>
     <schema name="" catalog="world"/>
+    <table name="authorizationevent" schema="" catalog="checkin" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="studentId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="longitude" sqlType="DOUBLE" length="22" precision="0" nullable="false" jdbcType="8"/>
+      <column name="latitude" sqlType="DOUBLE" length="22" precision="0" nullable="false" jdbcType="8"/>
+      <column name="authorizationDate" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <column name="isDeleted" sqlType="TINYINT" length="3" precision="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="authorizationevent_ibfk_1" columns="studentId" ref-table="student" ref-schema="" ref-catalog="checkin" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="classroom" schema="" catalog="checkin" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" length="45" precision="0" nullable="false" jdbcType="12"/>
+      <column name="longitude" sqlType="DOUBLE" length="22" precision="0" nullable="false" jdbcType="8"/>
+      <column name="latitude" sqlType="DOUBLE" length="22" precision="0" nullable="false" jdbcType="8"/>
+      <column name="isDeleted" sqlType="TINYINT" length="3" precision="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="event_ibfk_3" table="event" schema="" catalog="checkin" columns="classRoomId"/>
+    </table>
+    <table name="event" schema="" catalog="checkin" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="teacherId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="groupId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="classRoomId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="studySubjectId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="startDate" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA=" version="true"/>
+      <column name="endDate" sqlType="TIMESTAMP" length="19" precision="0" nullable="false" jdbcType="93" def="JzAwMDAtMDAtMDAgMDA6MDA6MDAn"/>
+      <column name="isDeleted" sqlType="TINYINT" length="3" precision="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="event_ibfk_1" columns="teacherId" ref-table="teacher" ref-schema="" ref-catalog="checkin" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="event_ibfk_2" columns="groupId" ref-table="group" ref-schema="" ref-catalog="checkin" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="event_ibfk_3" columns="classRoomId" ref-table="classroom" ref-schema="" ref-catalog="checkin" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="event_ibfk_4" columns="studySubjectId" ref-table="studysubject" ref-schema="" ref-catalog="checkin" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
     <table name="group" schema="" catalog="checkin" type="TABLE">
       <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="name" sqlType="VARCHAR" length="45" precision="0" nullable="false" jdbcType="12"/>
+      <column name="course" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" def="MQ=="/>
+      <column name="isDeleted" sqlType="TINYINT" length="3" precision="0" nullable="false" jdbcType="-6" def="MA=="/>
       <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="event_ibfk_2" table="event" schema="" catalog="checkin" columns="groupId"/>
+      <exported-key name="student_ibfk_1" table="student" schema="" catalog="checkin" columns="groupId"/>
     </table>
     <table name="migrator" schema="" catalog="checkin" type="TABLE">
       <column name="number" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
       <primary-key name="PRIMARY" columns="number"/>
+    </table>
+    <table name="student" schema="" catalog="checkin" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" length="45" precision="0" nullable="false" jdbcType="12"/>
+      <column name="surname" sqlType="VARCHAR" length="45" precision="0" nullable="false" jdbcType="12"/>
+      <column name="groupId" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4"/>
+      <column name="isDeleted" sqlType="TINYINT" length="3" precision="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="student_ibfk_1" columns="groupId" ref-table="group" ref-schema="" ref-catalog="checkin" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="authorizationevent_ibfk_1" table="authorizationevent" schema="" catalog="checkin" columns="studentId"/>
+    </table>
+    <table name="studysubject" schema="" catalog="checkin" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" length="45" precision="0" nullable="false" jdbcType="12"/>
+      <column name="isDeleted" sqlType="TINYINT" length="3" precision="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="event_ibfk_4" table="event" schema="" catalog="checkin" columns="studySubjectId"/>
+    </table>
+    <table name="teacher" schema="" catalog="checkin" type="TABLE">
+      <column name="id" sqlType="INT" length="10" precision="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="name" sqlType="VARCHAR" length="45" precision="0" nullable="false" jdbcType="12"/>
+      <column name="surname" sqlType="VARCHAR" length="45" precision="0" nullable="false" jdbcType="12"/>
+      <column name="patronymic" sqlType="VARCHAR" length="45" precision="0" nullable="false" jdbcType="12"/>
+      <column name="isDeleted" sqlType="TINYINT" length="3" precision="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="event_ibfk_1" table="event" schema="" catalog="checkin" columns="teacherId"/>
     </table>
     <table name="CHARACTER_SETS" schema="" catalog="information_schema" type="SYSTEM VIEW">
       <column name="CHARACTER_SET_NAME" sqlType="VARCHAR" length="32" precision="0" nullable="false" jdbcType="12" def="Jyc="/>
